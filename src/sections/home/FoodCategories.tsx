@@ -1,5 +1,5 @@
 import CategoryCard from "@/components/CategoryCard";
-import { getAllFoodCategories } from "@/services/api/food-category";
+import { getAllFoodCategories } from "@/services/api/food";
 
 const FoodCategories = async () => {
   const categories = (await getAllFoodCategories()) as Category[];

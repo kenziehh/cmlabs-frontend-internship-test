@@ -13,7 +13,7 @@ export const getAllFoodCategories = async () => {
   }
 };
 
-export const getFoodCategoryById = async (name: string) => {
+export const getMealsByCategoryName = async (name: string) => {
     try {
         const res = await axios.get(`${BASE_URL}/1/filter.php?c=${name}`);
         return res.data.meals;
