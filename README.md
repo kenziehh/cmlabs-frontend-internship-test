@@ -2,6 +2,10 @@
 
 This project is a Next.js application built as part of the cmlabs frontend internship test. The application uses modern web technologies including Next.js 14, React 18, Tailwind CSS, and TypeScript.
 
+## Check the deployment here
+
+https://cmlabs-frontend-internship-test-kenzie.vercel.app/
+
 ## Table of Contents
 
 - [Requirements]
