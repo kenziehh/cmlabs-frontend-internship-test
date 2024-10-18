@@ -15,8 +15,8 @@ const CategoryDetail = ({
           All Meals on {categoryName}
         </h2>
         <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6 md:gap-10">
-          {meals.map((meal) => {
-            return <MealCard meal={meal} categoryName={categoryName} />;
+          {meals?.map((meal) => {
+            return <MealCard meal={meal} categoryName={categoryName} key={meal.idMeal} />;
           })}
         </div>
       </div>

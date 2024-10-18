@@ -6,7 +6,6 @@ import axios from "axios";
 export const getAllFoodCategories = async () => {
   try {
     const res = await axios.get(`${BASE_URL}/1/categories.php`);
-    console.log(res);
     return res.data.categories;
   } catch (error) {
     console.log(error);
