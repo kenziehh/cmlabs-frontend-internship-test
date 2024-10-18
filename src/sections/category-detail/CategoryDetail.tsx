@@ -1,4 +1,5 @@
 import MealCard from "@/components/MealCard";
+import Link from "next/link";
 const CategoryDetail = ({
   meals,
   categoryName,
@@ -8,7 +9,8 @@ const CategoryDetail = ({
 }) => {
   return (
     <section className="min-h-screen bg-dark-80">
-      <div className="container flex justify-center py-10 md:py-20 flex-col gap-10 md:gap-20">
+      <div className="container flex justify-center py-10 md:py-20 flex-col gap-10 md:gap-14">
+        <Link href="/" className="text-white text-base md:text-2xl">{"< Back"}</Link>
         <h2 className="text-center text-white font-semibold text-3xl md:text-6xl">
           All Meals on {categoryName}
         </h2>
